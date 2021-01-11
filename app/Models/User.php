@@ -9,7 +9,16 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    public $table = "users";
+
     use HasFactory, Notifiable;
+
+    public $primaryKey="UserId";
+
+    public function Territory()
+    {
+        return $this->hasOne("App\Models\Territory","TerritoryId","TerritoryId");
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -17,7 +26,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
+        'name', 
         'email',
         'password',
     ];

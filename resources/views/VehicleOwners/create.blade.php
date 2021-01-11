@@ -25,7 +25,6 @@
 
   Address: <br><textarea rows="2" cols="70" name="Address" class="form-control"></textarea><br>
   Other Phone Number: <br> <input type="phone" name="Phone2" class="form-control"><br>
-  Email: <br><input type="email" name="Email" class="form-control"><br>
   <input type="submit" name="submit" value="Submit" class="btn-primary btn">
 </form>
 

@@ -22,3 +22,19 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // FOR USERS
 Route::get("/users","Api\UsersController@index");
 Route::post("/users/submit","Api\UsersController@submit");
+
+//TERRITORY
+Route::get("/territories","Api\TerritoryController@index");
+
+//CATEGORIES
+Route::get("/categories","Api\ProductCategoryController@index");
+
+//SUB CATEGORIES
+Route::get("/subcategories","Api\ProductSubCategoryController@index");
+
+//SHOP
+Route::get("/shops","Api\ShopController@index");
+
+//PRODUCTS
+Route::get("/products","Api\ProductController@index");
+Route::post("shopproducts", "Api\ProductController@shopProducts");

@@ -40,7 +40,6 @@ class VehicleOwnerController extends Controller
     		$vehicle_owner = new VehicleOwner;
     		$vehicle_owner->Address = $req->Address;
     		$vehicle_owner->Phone2 = $req->Phone2;
-    		$vehicle_owner->Email = $req->Email;
     		$vehicle_owner->UserId = $user->UserId;
 
     		if($vehicle_owner->save())

@@ -11,6 +11,8 @@
   <input type="phone" name="Phone" class="form-control"><br>
   UserName:<br>
   <input type="text" name="UserName" class="form-control"><br>
+  Email: <br>
+  <input type="email" name="Email" class="form-control"> <br>
   Password:<br>
   <input type="password" name="Password" class="form-control"><br>
   <!-- Type:

@@ -33,6 +33,7 @@ class UsersController extends Controller
 		$user->Name = $req->Name;
 		$user->Phone = $req->Phone;
 		$user->UserName = $req->UserName;
+		$user->Email = $req->Email;
 		$user->Password = $req->Password;
 		$user->Type = "User";
 		$user->TerritoryId = $req->TerritoryId;
